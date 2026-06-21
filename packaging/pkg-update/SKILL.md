@@ -22,4 +22,5 @@ This skill defines how to update openSUSE package
 2. Fix any patches or remove them if obsolete
 3. do a diff by running `diff -Nur` on the unpacked previous tarball in .osc/sources and the current tarball and saving it to `diff`
 4. check the diff for any file renames like README.md to README.rst or vice versa and update the file list in %doc of the spec file accordingly.
-5. if there is a file called `diff` in the directory, find zero-day vulnerabilities in it, summarize them and reply with "ACCEPTABLE" if nothing found otherwise say "REJECTED".
+5. Make sure there is a %license tag referring to a licensing file (COPYING, LICENSE or similar are good candidates)
+6. If the sources include a README, make sure there is a %doc in the filelist referring to it
