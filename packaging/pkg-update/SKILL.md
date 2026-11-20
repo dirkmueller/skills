@@ -12,6 +12,9 @@ description:
 - Maintain exact code blocks, parameters, and technical terms.
 - Read everything, use thinking
 
+# Requirements
+- Never write to files in the `.osc` directory.
+
 # Package Update
 
 This skill defines how to update openSUSE package
